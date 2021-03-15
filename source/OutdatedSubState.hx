@@ -19,8 +19,8 @@ class OutdatedSubState extends MusicBeatState
 		var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
 		add(bg);
 		var txt:FlxText = new FlxText(0, 0, FlxG.width,
-			"Kade Engine is Outdated!\n"
-			+ MainMenuState.kadeEngineVer
+			"C Engine is Outdated!\n"
+			+ MainMenuState.cEngineVer
 			+ " is your current version\nwhile the most recent version is " + needVer
 			+ "!\nPress Space to go to the github or ESCAPE to ignore this!!",
 			32);
@@ -33,7 +33,7 @@ class OutdatedSubState extends MusicBeatState
 	{
 		if (controls.ACCEPT)
 		{
-			FlxG.openURL("https://github.com/KadeDev/Kade-Engine/releases/latest");
+			FlxG.openURL("https://github.com/cryptofyre/Funkin-C-Engine/releases/latest");
 		}
 		if (controls.BACK)
 		{
