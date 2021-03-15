@@ -1,5 +1,9 @@
 package;
 
+#if desktop
+import Discord.DiscordClient;
+import sys.thread.Thread;
+#end
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;
@@ -105,6 +109,10 @@ class TitleState extends MusicBeatState
 		{
 			startIntro();
 		});
+		#end
+
+		#if desktop
+		DiscordClient.initialize();
 		#end
 	}
 
@@ -294,15 +302,15 @@ class TitleState extends MusicBeatState
 			new FlxTimer().start(2, function(tmr:FlxTimer)
 			{
 
-				// Get current version of Kade Engine
+				// Get current version of C Engine
 
-				var http = new haxe.Http("https://raw.githubusercontent.com/KadeDev/Kade-Engine/master/version.downloadMe");
+				var http = new haxe.Http("https://raw.githubusercontent.com/cryptofyre/Funkin-C-Engine/master/version.downloadMe");
 
 				http.onData = function (data:String) {
 				  
-				  	if (!MainMenuState.kadeEngineVer.contains(data.trim()) && !OutdatedSubState.leftState)
+				  	if (!MainMenuState.cEngineVer.contains(data.trim()) && !OutdatedSubState.leftState)
 					{
-						trace('outdated lmao! ' + data.trim() + ' != ' + MainMenuState.kadeEngineVer);
+						trace('outdated lmao! ' + data.trim() + ' != ' + MainMenuState.cEngineVer);
 						OutdatedSubState.needVer = data;
 						FlxG.switchState(new OutdatedSubState());
 					}
