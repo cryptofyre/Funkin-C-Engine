@@ -46,8 +46,8 @@ class Preloader extends FlxBasePreloader
             logo.x -= Percent * 0.6;
             logo.y -= Percent / 2;
         }else{
-            logo.scaleX = this._width / 1280;
-            logo.scaleY = this._width / 1280;
+            logo.scaleX = this._width / 1920;
+            logo.scaleY = this._width / 1920;
             logo.x = ((this._width) / 2) - ((logo.width) / 2);
             logo.y = (this._height / 2) - ((logo.height) / 2);
         }

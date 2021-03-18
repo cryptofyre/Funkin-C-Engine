@@ -30,7 +30,7 @@ class OptionsMenu extends MusicBeatState
 		trace(controlsStrings);
 
 		menuBG.color = 0xFFea71fd;
-		menuBG.setGraphicSize(Std.int(menuBG.width * 1.1));
+		menuBG.setGraphicSize(Std.int(menuBG.width * 2));
 		menuBG.updateHitbox();
 		menuBG.screenCenter();
 		menuBG.antialiasing = true;
@@ -59,6 +59,8 @@ class OptionsMenu extends MusicBeatState
 
 	override function update(elapsed:Float)
 	{
+		FlxG.sound.playMusic(Paths.music('totallyoptionsmusic'));
+		
 		super.update(elapsed);
 
 			if (controls.BACK)
