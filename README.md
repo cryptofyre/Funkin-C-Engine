@@ -1,11 +1,17 @@
 	
 ## What is C Engine?
 
-C Engine is a more competitive play ready engine alternative of the OG games engine.
+C Engine is a more competitive play ready engine alternative of the OG games engine based on Kade Engine
 
 ## Features
 
 The features that C Engine implements are:
+
+- 1080P Support! (Unfinished)
+**Ever wanted to actually use your whole fucking display but the vanilla game said fuck you use 720P. Now you can! This unlocks more space for arrows and other bs.**
+
+*This feature was a pain in the ass to setup as FNF is extremely unfriendly to resolution changes.*
+
 - New Input System
 
 *Hate the old engine because your inputs are delayed? Are inputs being dropped? Well with this input system, inputs rarely get dropped! If you wanna see an example of what it feels like, play any 4k rhythm game like Quaver or Etterna!*
@@ -16,7 +22,7 @@ The features that C Engine implements are:
 
 - FPS Increase
 
-*We always love more FPS, and this is what you'll get. We've increase the FPS cap to 120.*
+*We always love more FPS, and this is what you'll get. We've increase the FPS cap to 160.*
 
 - DFJK Support
 
